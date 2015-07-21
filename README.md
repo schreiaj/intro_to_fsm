@@ -4,7 +4,7 @@ This is going to be something of an experiment in that I don't know if it will w
 
 ### About the Tech
 
-I'm going to be using [Elixir](elixir-lang.org) and the [Fsm](https://github.com/sasa1977/fsm) library. I've chosen these tools because they are pretty good about getting out of the way and letting me focus on the concept. Elixir is NOT a beginner friendly language. (And also because I really wanted an excuse to play with it.)
+I'm going to be using [Elixir](http://elixir-lang.org) and the [Fsm](https://github.com/sasa1977/fsm) library. I've chosen these tools because they are pretty good about getting out of the way and letting me focus on the concept. Elixir is NOT a beginner friendly language. (And also because I really wanted an excuse to play with it.)
 
 ### All Hail the FSM
 
