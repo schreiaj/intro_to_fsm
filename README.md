@@ -48,7 +48,7 @@ defmodule FRCRobot do
 end
 ```
 
-We also need to update our dependencies to have the fsm module. We can do that by adding ```{:fsm, "~> 0.2.0"}``` to the deps array in mix.exs. A quick ```mix deps.get``` and ```mix test``` is all passing.
+We also need to update our dependencies to have the fsm module. We can do that by adding ```{:fsm, "~> 0.2.0"}``` to the deps array in mix.exs. A quick ```mix deps.get``` and ```mix test``` and it's green across the board.
 
 Next, we're going to add a bit of info about the state, in the FRCRobotTest module add:
 ```elixir
@@ -74,7 +74,7 @@ end
 ...
 ```
 
-I can hear your questions from here, yes, I had to define the :working state even though the test specified :not_working. That's actually just a quick of the way elixir finds its methods. Either way, your claim is correct. What if we wanted to add a test to be sure we can fix it?
+I can hear your questions from here, yes, I had to define the :working state even though the test specified :not_working. That's actually just a quirk of the way elixir finds its methods. Either way, your test is now correct. What if we wanted to add a test to be sure we can fix it?
 
 ```elixir
 ...
@@ -98,4 +98,4 @@ end
 ...
 ```
 
-And we've built a simple Finite State Machine. There's a few more behaviors we should test, and I've gone ahead and done those out in the final code... I hope you can see how we could expand this for use in modeling out behavior of a robot during a game. (If you can't, don't worry, there's another post on the way about that) If you got lost or just want to run the code, it's available on github.
+And we've built a simple Finite State Machine. There's a few more behaviors we should test, and I've gone ahead and done those out in the final code, but I hope you can see how we could expand this for use in modeling out behavior of a robot during a game. (If you can't, don't worry, there's another post on the way about that) If you got lost or just want to run the code, it's available on [github](https://github.com/schreiaj/intro_to_fsm).
