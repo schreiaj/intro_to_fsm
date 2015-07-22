@@ -1,6 +1,6 @@
 ## Modeling Games using Finite State Machines (in Elixir)
 
-This is going to be something of an experiment in that I don't know if it will work as I'm writing it. I hope, if it doesn't work, that the reader will take away a lesson on how to go about approaching a new FRC game.
+This is going to be something of an experiment in that I don't know if it will work as I'm writing it. I hope, if it doesn't work, that the reader will take away a lesson on how to go about approaching a new FRC game. This will actually be the first in a series of posts that will build up to simulating robot strategies using state machines.
 
 ### About the Tech
 
@@ -10,7 +10,7 @@ I'm going to be using [Elixir](http://elixir-lang.org) and the [Fsm](https://git
 
 So, what is an FSM? It's a really fancy way of saying "a bunch of states and ways to move between them." No, really, that's all it is. Let's model a really bad mechanical student working on the bot with a simple FSM:
 
-We've got a collection of states for the, [:working, :not_working], a way of transitioning from :not_working to :working (:hit_with_hammer), and a way of transitioning from :working to :not_working (:give_to_software).
+We've got a collection of states for the system, [:working, :not_working], a way of transitioning from :not_working to :working (:hit_with_hammer), and a way of transitioning from :working to :not_working (:give_to_software).
 
 So, let's just assume we get the robot and it is :not_working, we can do a bunch of actions to the robot, but the only one that will change its state is :hit_with_hammer. Given that input the state machine will transition to :working. From there we can do a lot with it, but the only thing that causes a state transition is :give_to_software. So we do that and we're back to :not_working.
 
